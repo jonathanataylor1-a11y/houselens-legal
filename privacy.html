@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>HouseLens Privacy Policy</title>
+<style>
+:root { color-scheme: light dark; --fg: #1d1d1f; --muted: #555; --bg: #fff; --line: #ddd; --accent: #0a6b5a;
+  --warn-bg: #fff4e5; --warn-fg: #7a4100; --warn-line: #f0b35b; --code: #f2f2f2; }
+@media (prefers-color-scheme: dark) { :root { --fg: #f2f2f2; --muted: #aaa; --bg: #111; --line: #333;
+  --accent: #5fd3b8; --warn-bg: #3a2a10; --warn-fg: #ffd9a0; --warn-line: #a86b14; --code: #222; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 20px 64px; }
+h1 { font-size: 1.9em; line-height: 1.2; margin: 0.4em 0 0.6em; }
+h2 { font-size: 1.3em; margin: 1.8em 0 0.5em; padding-top: 0.6em; border-top: 1px solid var(--line); }
+h3 { font-size: 1.08em; margin: 1.4em 0 0.4em; }
+p, ul { margin: 0 0 1em; }
+ul { padding-left: 1.3em; }
+li { margin: 0.3em 0; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+code { background: var(--code); padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.9em; overflow-wrap: anywhere; }
+.banner { background: var(--warn-bg); color: var(--warn-fg); border: 1px solid var(--warn-line); border-radius: 10px;
+  padding: 12px 16px; margin: 0 0 1.2em; }
+.banner p { margin: 0; }
+nav { font-size: 0.95em; color: var(--muted); margin-bottom: 8px; }
+footer { margin-top: 3em; font-size: 0.9em; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">HouseLens legal</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></nav>
+<h1 id="houselens-privacy-policy">HouseLens Privacy Policy</h1>
+<div class="banner" role="note"><p><strong>Draft — not yet reviewed by a lawyer.</strong> This document has not been reviewed by an attorney and may not be legally sufficient. Items marked [OWNER TO CONFIRM] must be completed before it is relied on.</p></div>
+<p><strong>Last updated:</strong> October 11, 2026 (draft). <strong>Effective date:</strong> [OWNER TO CONFIRM]</p>
+<p>This policy explains what information the HouseLens iOS app ("HouseLens", "we", "us") handles, where it goes, and the choices you have. HouseLens is operated by [OWNER TO CONFIRM: legal name of the operating person or company, e.g. "Jonathan Taylor" or "HouseLens LLC"], [OWNER TO CONFIRM: mailing address]. Questions: <strong>houselens.app@gmail.com</strong>.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li><strong>You don't need an account to scan homes.</strong> HouseLens identifies the house you point at using your camera direction, GPS location, compass heading and motion sensors. That calculation happens on your iPhone.</li>
+<li><strong>Your GPS position, heading, motion data, camera images and scan history are not sent to HouseLens's servers or to our advertising partner.</strong> Some outside services do receive limited information so the app can work. For example, Zillow receives the street address of the home you identified. Details are below.</li>
+<li><strong>Ads are contextual.</strong> HouseLens does not ask for App Tracking Transparency permission, so iOS does not give the app or Google your device's advertising identifier (IDFA).</li>
+<li><strong>Only real estate agents who choose to advertise create accounts.</strong> Agent data is stored with our hosting provider, Supabase. Agents can delete their account in the app.</li>
+<li><strong>We do not sell personal information.</strong></li>
+</ul>
+<h2 id="1-who-this-policy-covers">1. Who this policy covers</h2>
+<ul>
+<li><strong>Consumers</strong> who use HouseLens to identify and look up homes. Consumers never sign in.</li>
+<li><strong>Real estate agents</strong> who sign in to publish a sponsored profile and buy an advertising subscription ("agents").</li>
+</ul>
+<h2 id="2-information-that-stays-on-your-device">2. Information that stays on your device</h2>
+<p>HouseLens uses the following on your iPhone to identify a home. It is not uploaded to HouseLens:</p>
+<ul>
+<li><strong>Camera.</strong> The live camera view is used to aim at a house. Camera frames are not uploaded. When you scan a home, the app may save one small photo (at most 480 pixels) from the camera as the thumbnail for that scan, stored only on your device.</li>
+<li><strong>Location, heading and motion.</strong> Your GPS location, compass heading and device motion are used on the device to work out which building you are pointing at. iOS asks your permission before the app can use your location or camera.</li>
+<li><strong>Recent Scans.</strong> The app keeps your most recent scans (up to 15 homes) on your device so you can reopen them. Each one holds the property record, the estimate shown, comparable homes, any Zillow value and the thumbnail. You can delete one scan by swiping it, or delete all of them with <strong>Clear</strong> in Recent Scans. Deleting the app deletes them too.</li>
+<li><strong>Caches.</strong> To avoid repeating lookups, the app keeps on your device Zestimates it has already read (up to 500 homes, refreshed after 72 hours) and computed estimates (usable for up to 7 days). These are deleted when you delete the app.</li>
+<li><strong>Other on-device records.</strong> The app keeps a local log of sponsored-card events (for example "card shown"). It also keeps a list of homes already counted today for the activity counter (Section 3.6), stored as salted one-way hashes rather than property IDs. Any lead request you submit is also stored on the device (Section 4).</li>
+</ul>
+<p>If no camera frame is available (for example, the camera is off), the thumbnail may be a satellite map image of the property's location from Apple Maps (Section 3.3).</p>
+<h2 id="3-information-that-leaves-your-device">3. Information that leaves your device</h2>
+<h3 id="3-1-public-property-record-services">3.1 Public property-record services</h3>
+<p>To find the buildings and addresses around you, the app downloads public geographic data from <strong>Dutchess County's public GIS service</strong> (hosted on Esri's ArcGIS Online, <code>services5.arcgis.com</code>). Each request contains the boundaries of a small map area (cells about 250 meters across) around your current position. It does not contain your exact GPS reading, but it does show the general area you are in.</p>
+<p>To read assessment facts for the identified home and nearby comparable homes, the app sends <strong>those properties' coordinates</strong> to the <strong>New York State Tax Assessment Lookup service</strong> (<code>gisservices.its.ny.gov</code>).</p>
+<p>Like any internet request, these services also receive your device's IP address and standard technical information. Their own policies govern what they log.</p>
+<h3 id="3-2-zillow">3.2 Zillow</h3>
+<p>After a home is identified, the app loads that home's <strong>public Zillow web page</strong> in a hidden in-app browser and reads the Zillow "Zestimate" shown there. Zillow receives:</p>
+<ul>
+<li>the <strong>street address, city, state and ZIP code of the identified home</strong>, taken from the public property record (never from your GPS), as part of the page address;</li>
+<li>your IP address and the standard information any web browser sends.</li>
+</ul>
+<p>The Zillow page's own scripts run in that hidden browser and may set cookies or contact other services, as they would in Safari. HouseLens limits this. The page cannot read your location (location requests are refused). Images, video and fonts are not downloaded. Cookies last only until the app is closed. HouseLens is not affiliated with Zillow, and Zillow's privacy policy applies to what Zillow collects. To turn this off, [OWNER TO CONFIRM: no in-app switch currently exists for consumers].</p>
+<h3 id="3-3-apple">3.3 Apple</h3>
+<ul>
+<li><strong>Apple Maps</strong> may receive a property's coordinates if the app creates a satellite map thumbnail for a scan.</li>
+<li><strong>Apple DeviceCheck.</strong> See Section 3.6.</li>
+<li><strong>App Store.</strong> Agent purchases are processed by Apple (Section 5).</li>
+</ul>
+<h3 id="3-4-sponsored-agent-lookup-houselens-servers">3.4 Sponsored agent lookup (HouseLens servers)</h3>
+<p>When a home is identified, the app sends the <strong>five-digit ZIP code of that home</strong> to HouseLens's server (hosted by Supabase) to find agents who are advertising in that ZIP. Agent headshots are then downloaded from our storage. No location, heading, address, property ID or scan history is sent.</p>
+<h3 id="3-5-sponsored-card-statistics-houselens-servers">3.5 Sponsored card statistics (HouseLens servers)</h3>
+<p>When a paid sponsored card is shown, opened, or you tap Call, Text or Email, the app sends a counter event. It contains a random event ID, the campaign ID, the event type, the home's ZIP code, where in the app it happened, and the time. It does not include a device identifier, location, address or anything about you. Agents see these as totals.</p>
+<h3 id="3-6-houselens-activity-counter-houselens-servers">3.6 HouseLens activity counter (HouseLens servers)</h3>
+<p>In the App Store version, when the camera identifies a real home, the app reports one "property identification" per home per day. Reopening a saved scan does not count. The report contains only:</p>
+<ul>
+<li>a random one-time ID;</li>
+<li>the home's five-digit ZIP code;</li>
+<li>when available, an <strong>Apple DeviceCheck token</strong>. Our server sends it to Apple to confirm the request came from a genuine Apple device. HouseLens cannot use this token to identify you or your device.</li>
+</ul>
+<p>To limit abuse, our server combines your IP address with a secret value and the date to make a one-way hash. The raw IP address is not stored by our code. The hashes are deleted after about one day, and the one-time IDs after about three days. What we keep is a count of identifications per ZIP code per day. Agents see these counts for their ZIP codes, and counts under 10 are hidden.</p>
+<h3 id="3-7-advertising-google">3.7 Advertising (Google)</h3>
+<p>HouseLens shows a banner ad through the <strong>Google Mobile Ads SDK (AdMob)</strong> and uses <strong>Google's User Messaging Platform (UMP)</strong> for consent:</p>
+<ul>
+<li>HouseLens marks ad requests as <strong>non-personalized</strong>. It does not attach your location, keywords about the home, or any identifiers to the request.</li>
+<li>HouseLens does <strong>not</strong> request App Tracking Transparency permission. iOS therefore does not give the app or Google your advertising identifier (IDFA).</li>
+<li>Google's SDK still collects some information on its own, such as your IP address, device and app information, and ad interactions. Google uses it to deliver ads, limit how often you see them, measure them and prevent fraud. Google's own policies govern this: see <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</li>
+<li>Where Google determines consent is required (for example in the EEA, the UK or Switzerland), Google's consent form is shown before ads are requested. [OWNER TO CONFIRM: whether US state privacy messages are enabled in the AdMob console, and whether the app will offer a "Privacy options" button to change consent later.]</li>
+</ul>
+<p>HouseLens never adds your GPS position, heading, motion data, the address you scanned, your scan history or your contact details to ad requests.</p>
+<h3 id="3-8-what-houselens-s-servers-never-receive-from-consumers">3.8 What HouseLens's servers never receive from consumers</h3>
+<p>HouseLens's servers and our advertising partner do not receive your GPS coordinates, compass heading, motion data, camera images, the exact address you scanned, your scan history, or your contact details. The one exception is a lead request you choose to send (Section 4). As explained above, Zillow does receive the identified home's address, and public GIS services receive map areas and property coordinates.</p>
+<h2 id="4-contacting-a-sponsored-agent">4. Contacting a sponsored agent</h2>
+<ul>
+<li><strong>Call, Text, Email.</strong> These buttons open your phone's own Phone, Messages or Mail app with the agent's published number or email. HouseLens does not write a message for you and does not see or store what you send. Whatever you send goes directly to the agent. HouseLens only counts that the button was tapped (Section 3.5).</li>
+<li><strong>Request forms ("Request a Tour", "Ask a Question").</strong> Where offered, you can send the agent your first name, phone number and/or email, an optional message, whether you want a tour or similar homes, and how you prefer to be contacted. The request includes the address and ZIP of the home you were viewing, the agent and campaign, and the time you agreed to the consent text shown. It is saved on your device first. It is then sent to HouseLens's lead-delivery service, which forwards it to the agent shown. If it can't be delivered, it stays on your device, the app tells you it hasn't been sent, and it retries a limited number of times. [OWNER TO CONFIRM: whether request forms will be offered at launch, where delivered requests are stored on the server, and for how long.]</li>
+</ul>
+<p>The agent you contact is an independent business, not HouseLens. Once the agent has your information, their own privacy practices apply.</p>
+<h2 id="5-real-estate-agent-accounts">5. Real estate agent accounts</h2>
+<p>If you sign in to advertise, we collect:</p>
+<ul>
+<li><strong>Sign-in email.</strong> You sign in with a one-time code sent to your email. Codes are sent by Supabase Auth through our email provider, Brevo.</li>
+<li><strong>Public profile:</strong> display name, brokerage, optional bio, optional website, optional public email, a required public business phone that you agree to show, an optional headshot, and the ZIP codes you serve.</li>
+<li><strong>Private details:</strong> legal name, business email, license state, license type and license number. These are never shown to consumers. HouseLens checks only the format of the license number; it does not verify licenses with any government agency.</li>
+<li><strong>Confirmations:</strong> when you confirmed your details are accurate, accepted the Terms of Use (and which version), acknowledged this policy, and agreed to show your phone publicly.</li>
+<li><strong>Headshot.</strong> On your device, the photo is cropped square, resized to at most 512 pixels, and stripped of location and camera metadata before upload. Until you publish, it is stored privately. Once published, it is stored in a public storage location so consumers' apps can show it.</li>
+<li><strong>Subscription records from Apple:</strong> a random account token that links your purchase to your profile, Apple's transaction ID, product, environment (production or test), status, renewal and expiry dates, and Apple's signed purchase data. <strong>Apple processes your payment; HouseLens never receives your card or billing details.</strong> Apple's notifications about renewals, refunds and cancellations are recorded.</li>
+<li><strong>Campaign data and statistics:</strong> target ZIPs, whether your card is on or paused, and the aggregate counts described in Sections 3.5 and 3.6.</li>
+<li><strong>Sign-in session.</strong> Your sign-in session is stored in the iOS Keychain on your device.</li>
+</ul>
+<p>While your profile is published and your subscription is active, your display name, brokerage, headshot, public phone, public email, bio and website are shown to consumers looking at homes in your ZIP codes.</p>
+<p>The "estimated monthly home-shopping audience" shown to agents comes from public U.S. Census Bureau data (American Community Survey). It contains no personal information about anyone.</p>
+<h2 id="6-how-we-use-information">6. How we use information</h2>
+<p>We use information to identify homes and show estimates; to show sponsored agents and ads; to run, secure and prevent abuse of the service; to create and manage agent accounts, profiles, subscriptions and campaigns; to give agents aggregate statistics; to send sign-in codes; to respond to you; and to comply with law.</p>
+<h2 id="7-service-providers-and-other-recipients">7. Service providers and other recipients</h2>
+<ul>
+<li><strong>Supabase</strong> hosts our database, agent sign-in, file storage and server functions, in the United States (AWS us-east-1).</li>
+<li><strong>Brevo</strong> sends agent sign-in code emails and receives the agent's email address and the code.</li>
+<li><strong>Google</strong> provides ads (AdMob) and consent management (UMP), as described in Section 3.7.</li>
+<li><strong>Apple</strong> processes App Store payments and sends subscription notifications. Apple also provides DeviceCheck and Apple Maps.</li>
+<li><strong>Zillow</strong> is an independent third-party website, not our service provider (Section 3.2).</li>
+<li><strong>Dutchess County (via Esri ArcGIS Online) and New York State GIS services</strong> provide public data (Section 3.1).</li>
+<li><strong>Real estate agents</strong> receive whatever you choose to send them (Section 4).</li>
+</ul>
+<p>We may also disclose information when required by law or legal process, to protect rights, safety and security, or as part of a merger, acquisition or sale of assets, in which case this policy continues to apply.</p>
+<p><strong>We do not sell personal information.</strong> We do not share it for cross-context behavioral (targeted) advertising, and our ad requests are marked non-personalized. [OWNER TO CONFIRM with counsel that this statement is accurate under California and other state definitions, given the Google Mobile Ads SDK's own data collection.]</p>
+<h2 id="8-how-long-we-keep-information">8. How long we keep information</h2>
+<ul>
+<li><strong>On your device:</strong> until you delete it or delete the app. Recent Scans keeps at most 15 homes.</li>
+<li><strong>Agent accounts:</strong> until you delete the account. Deleting it removes your sign-in account, profile, campaign, sponsored-card statistics, and draft and published headshots.</li>
+<li><strong>Headshots:</strong> unpublished draft uploads are deleted after 24 hours. Replaced or orphaned public images are deleted after about an hour.</li>
+<li><strong>Activity counter:</strong> abuse-prevention hashes are kept for about 1 day, one-time IDs for about 3 days, and per-ZIP daily totals indefinitely (they contain no personal information).</li>
+<li><strong>Apple notification records</strong> (Apple transaction ID, notification type and dates) are not currently deleted with an agent account. [OWNER TO CONFIRM: retention period, e.g. as needed for tax and accounting records.]</li>
+<li><strong>Provider logs and backups</strong> (for example request logs at Supabase, Brevo or Google) are kept according to those providers' schedules. [OWNER TO CONFIRM.]</li>
+</ul>
+<h2 id="9-your-choices-and-rights">9. Your choices and rights</h2>
+<ul>
+<li><strong>Permissions:</strong> you can turn off camera or location access in iOS Settings. HouseLens can't identify homes without them.</li>
+<li><strong>Recent Scans:</strong> delete one or all in the app.</li>
+<li><strong>Delete your agent account:</strong> in the app, open <strong>Settings (gear icon) → Advertise with HouseLens → Delete agent account</strong>. This can't be undone. <strong>Deleting your account does not cancel your App Store subscription.</strong> Cancel it in <strong>Settings → [your name] → Subscriptions</strong> on your iPhone.</li>
+<li><strong>Agents can edit their profile</strong> or take their card offline at any time in the app.</li>
+<li><strong>Requests:</strong> to ask what we hold about you, or to correct or delete it, email houselens.app@gmail.com. We may need to verify your request. Consumers don't have accounts, so we usually hold nothing that identifies them.</li>
+</ul>
+<p><strong>California residents.</strong> Depending on whether the California Consumer Privacy Act (as amended by the CPRA) applies to HouseLens, you may have the right to know what personal information we collect, use and disclose; to delete it; to correct it; and to opt out of its sale or sharing. We do not sell or share it as described in Section 7. We will not discriminate against you for exercising these rights. Categories collected: identifiers (agents: name, email, phone; consumers: IP address seen by our servers), professional information (agents: license and brokerage), commercial information (agents: subscription status), internet activity (aggregate sponsored-card events), and approximate geography (ZIP code). [OWNER TO CONFIRM with counsel whether the CCPA applies and the required disclosures.]</p>
+<p><strong>New York residents.</strong> [OWNER TO CONFIRM with counsel which New York requirements apply, for example the SHIELD Act's data-security and breach-notification rules, and any wording to include here.]</p>
+<h2 id="10-security">10. Security</h2>
+<p>Connections to our servers use HTTPS. Agent data is protected by per-account database access rules. Agent sign-in sessions are kept in the iOS Keychain, and on-device files use iOS data protection. No system is perfectly secure, and we can't guarantee absolute security.</p>
+<h2 id="11-children">11. Children</h2>
+<p>HouseLens is not directed to children under 13, and we do not knowingly collect personal information from them. Agent accounts are only for licensed real estate professionals who are adults. If you believe a child has given us personal information, email houselens.app@gmail.com and we will delete it. [OWNER TO CONFIRM: the App Store age rating; none is set in the project files.]</p>
+<h2 id="12-where-information-is-processed">12. Where information is processed</h2>
+<p>HouseLens is intended for use in the United States. Our servers are in the United States.</p>
+<h2 id="13-changes">13. Changes</h2>
+<p>We will post changes on this page and update the "Last updated" date. If changes are significant, we will give notice in the app or by email to agents.</p>
+<h2 id="14-contact">14. Contact</h2>
+<p>[OWNER TO CONFIRM: operator legal name]<br>
+[OWNER TO CONFIRM: mailing address]<br>
+Email: <strong>houselens.app@gmail.com</strong></p>
+<footer>HouseLens · <a href="mailto:houselens.app@gmail.com">houselens.app@gmail.com</a></footer>
+</main>
+</body>
+</html>
