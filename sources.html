@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>HouseLens public data sources</title>
+<style>
+:root { color-scheme: light dark; --fg: #1d1d1f; --muted: #555; --bg: #fff; --line: #ddd; --accent: #0a6b5a;
+  --warn-bg: #fff4e5; --warn-fg: #7a4100; --warn-line: #f0b35b; --code: #f2f2f2; }
+@media (prefers-color-scheme: dark) { :root { --fg: #f2f2f2; --muted: #aaa; --bg: #111; --line: #333;
+  --accent: #5fd3b8; --warn-bg: #3a2a10; --warn-fg: #ffd9a0; --warn-line: #a86b14; --code: #222; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 20px 64px; }
+h1 { font-size: 1.9em; line-height: 1.2; margin: 0.4em 0 0.6em; }
+h2 { font-size: 1.3em; margin: 1.8em 0 0.5em; padding-top: 0.6em; border-top: 1px solid var(--line); }
+h3 { font-size: 1.08em; margin: 1.4em 0 0.4em; }
+p, ul { margin: 0 0 1em; }
+ul { padding-left: 1.3em; }
+li { margin: 0.3em 0; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+code { background: var(--code); padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.9em; overflow-wrap: anywhere; }
+.banner { background: var(--warn-bg); color: var(--warn-fg); border: 1px solid var(--warn-line); border-radius: 10px;
+  padding: 12px 16px; margin: 0 0 1.2em; }
+.banner p { margin: 0; }
+nav { font-size: 0.95em; color: var(--muted); margin-bottom: 8px; }
+footer { margin-top: 3em; font-size: 0.9em; color: var(--muted); }
+table { border-collapse: collapse; width: 100%; font-size: 0.85em; display: block; overflow-x: auto; }
+th, td { text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">HouseLens legal</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="support.html">Support</a></nav>
+<h1>Public data sources</h1>
+<p>HouseLens identifies homes from free public property records published by counties and states. Your phone
+requests small map areas (about 250 meters across) directly from these services; HouseLens's servers aren't involved.
+County sales files for a few counties are served from HouseLens's own storage, named by county only.
+1,021 counties are covered as of 2026-10-14.</p>
+<table><thead><tr><th>State</th><th>Source</th><th>Host</th><th>Counties</th></tr></thead><tbody>
+<tr><td>AL</td><td>Jefferson County AL Parcels</td><td><code>jccgis.jccal.org</code></td><td>1</td></tr>
+<tr><td>AL</td><td>Parcels hosted on AGOL (Tuscaloosa County)</td><td><code>services.arcgis.com</code></td><td>1</td></tr>
+<tr><td>AR</td><td>Arkansas GIS Office parcel polygons (CAMP)</td><td><code>gis.arkansas.gov</code></td><td>75</td></tr>
+<tr><td>AZ</td><td>Maricopa County Assessor Parcels (dynamic query)</td><td><code>gis.mcassessor.maricopa.gov</code></td><td>2</td></tr>
+<tr><td>AZ</td><td>Parcels Tile (Santa Cruz County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>AZ</td><td>Parcels in Yavapai County (Yavapai County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>AZ</td><td>Pima County Parcels - Regional</td><td><code>gisdata.pima.gov</code></td><td>1</td></tr>
+<tr><td>CA</td><td>California Statewide Parcels Public View (CAL FIRE)</td><td><code>bz1uwwpkuinzbk94.svcs5.arcgis.com</code></td><td>56</td></tr>
+<tr><td>CA</td><td>LA County Assessor Parcels</td><td><code>public.gis.lacounty.gov</code></td><td>1</td></tr>
+<tr><td>CO</td><td>Colorado Public Parcels composite</td><td><code>gis.colorado.gov</code></td><td>78</td></tr>
+<tr><td>CT</td><td>Connecticut CAMA and Parcel Layer</td><td><code>services3.arcgis.com</code></td><td>18</td></tr>
+<tr><td>DC</td><td>DC Owner Polygons (Common Ownership Layer)</td><td><code>maps2.dcgis.dc.gov</code></td><td>2</td></tr>
+<tr><td>DE</td><td>Delaware Kent County Parcels 2.0 (Kent County)</td><td><code>gis.kentcountyde.gov</code></td><td>1</td></tr>
+<tr><td>FL</td><td>Florida Statewide Cadastral (FDOR NAL)</td><td><code>services9.arcgis.com</code></td><td>1</td></tr>
+<tr><td>FL</td><td>Florida Statewide Cadastral (FDOR NAL)</td><td><code>services9.arcgis.com</code></td><td>132</td></tr>
+<tr><td>FL</td><td>Miami-Dade County Parcels View (site address, building area, year built)</td><td><code>services.arcgis.com</code></td><td>1</td></tr>
+<tr><td>GA</td><td>DeKalb County Parcels (DeKalb County)</td><td><code>dcgis.dekalbcountyga.gov</code></td><td>1</td></tr>
+<tr><td>GA</td><td>Parcel Data 2019 (Bibb County)</td><td><code>services2.arcgis.com</code></td><td>1</td></tr>
+<tr><td>GA</td><td>Parcels - GA - Athens-Clarke County (Clarke County)</td><td><code>services2.arcgis.com</code></td><td>1</td></tr>
+<tr><td>GA</td><td>Parcels - GA - Cobb County (Cobb County)</td><td><code>gis.cobbcounty.org</code></td><td>1</td></tr>
+<tr><td>GA</td><td>Parcels_Data_SAGES (Fayette County)</td><td><code>services5.arcgis.com</code></td><td>1</td></tr>
+<tr><td>GA</td><td>Rockdale Parcels (Rockdale County)</td><td><code>services.arcgis.com</code></td><td>1</td></tr>
+<tr><td>GA</td><td>Tax Parcel (Forsyth County)</td><td><code>geo.forsythco.com</code></td><td>1</td></tr>
+<tr><td>GA</td><td>TaxData_SaleInfo_Parcel (Dougherty County)</td><td><code>services6.arcgis.com</code></td><td>1</td></tr>
+<tr><td>IA</td><td>Parcels and Address Points (Dubuque County)</td><td><code>maps.cityofdubuque.org</code></td><td>1</td></tr>
+<tr><td>IA</td><td>Real Estate Parcel (Linn County)</td><td><code>services.arcgis.com</code></td><td>1</td></tr>
+<tr><td>ID</td><td>Ada County Parcel Boundaries</td><td><code>services2.arcgis.com</code></td><td>1</td></tr>
+<tr><td>ID</td><td>Public Idaho Parcels</td><td><code>services1.arcgis.com</code></td><td>12</td></tr>
+<tr><td>IL</td><td>Adams County, IL Parcels (Adams County)</td><td><code>services3.arcgis.com</code></td><td>1</td></tr>
+<tr><td>IL</td><td>Cook County Assessor - Parcel Sales</td><td><code>datacatalog.cookcountyil.gov</code></td><td>1</td></tr>
+<tr><td>IL</td><td>Cook County Current Parcel with Assessment Data</td><td><code>gis.cookcountyil.gov</code></td><td>1</td></tr>
+<tr><td>IL</td><td>CurrentParcels_WithPopUp (Kendall County)</td><td><code>maps.co.kendall.il.us</code></td><td>1</td></tr>
+<tr><td>IL</td><td>KaneCo_IL_Parcels (Kane County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>IL</td><td>Macon Co Parcels Rest Endpoint 2026 (Macon County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>IL</td><td>Parcel_Franklin (Franklin County)</td><td><code>services7.arcgis.com</code></td><td>1</td></tr>
+<tr><td>IL</td><td>Parcels (McHenry CO) (McHenry County)</td><td><code>www.mchenrycountygis.org</code></td><td>1</td></tr>
+<tr><td>IL</td><td>Parcels - IL - Boone County (Boone County)</td><td><code>maps.boonecountyil.org</code></td><td>1</td></tr>
+<tr><td>IL</td><td>Parcels - IL - DuPage County (DuPage County)</td><td><code>gis.dupageco.org</code></td><td>1</td></tr>
+<tr><td>IL</td><td>Parcels - IL - Morgan County (Morgan County)</td><td><code>services3.arcgis.com</code></td><td>1</td></tr>
+<tr><td>IL</td><td>Parcels - IL - St Clair County (St. Clair County)</td><td><code>arcgispublicmap.co.st-clair.il.us</code></td><td>1</td></tr>
+<tr><td>IL</td><td>Tax Parcels (Public) (Vermilion County)</td><td><code>gis.cityofdanville.org</code></td><td>1</td></tr>
+<tr><td>IL</td><td>Tax_Parcels (Peoria County)</td><td><code>services.arcgis.com</code></td><td>1</td></tr>
+<tr><td>IL</td><td>TazCo_Parcels_WithOwner (Tazewell County)</td><td><code>gis.tazewell-il.gov</code></td><td>1</td></tr>
+<tr><td>IL</td><td>parcels (Effingham County)</td><td><code>services5.arcgis.com</code></td><td>1</td></tr>
+<tr><td>IN</td><td>IndianaMap Parcel Boundaries Current</td><td><code>gisdata.in.gov</code></td><td>92</td></tr>
+<tr><td>KS</td><td>KS Shawnee Parcel (Shawnee County)</td><td><code>services2.arcgis.com</code></td><td>1</td></tr>
+<tr><td>KS</td><td>Parcels (Cowley County)</td><td><code>services2.arcgis.com</code></td><td>1</td></tr>
+<tr><td>KY</td><td>Ky_PVA_Webster_County_Parcels (Webster County)</td><td><code>kygisserver.ky.gov</code></td><td>1</td></tr>
+<tr><td>KY</td><td>Parcel (Fayette County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>KY</td><td>Property Boundaries (Hardin County)</td><td><code>gis.elizabethtownky.org</code></td><td>1</td></tr>
+<tr><td>KY</td><td>Tax Parcels (Boone County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>LA</td><td>East Baton Rouge Tax Parcel</td><td><code>maps.brla.gov</code></td><td>1</td></tr>
+<tr><td>MA</td><td>MassGIS Property Tax Parcels (L3, all 351 municipalities)</td><td><code>services1.arcgis.com</code></td><td>28</td></tr>
+<tr><td>MD</td><td>Maryland Parcel Boundaries (SDAT attributes)</td><td><code>mdgeodata.md.gov</code></td><td>48</td></tr>
+<tr><td>MI</td><td>Detroit Parcels (Current)</td><td><code>services2.arcgis.com</code></td><td>2</td></tr>
+<tr><td>MI</td><td>Ingham County Parcels 2025 (Ingham County)</td><td><code>services3.arcgis.com</code></td><td>1</td></tr>
+<tr><td>MI</td><td>Parcel Boundaries &amp; Property Information (Ottawa County)</td><td><code>gis.miottawa.org</code></td><td>1</td></tr>
+<tr><td>MI</td><td>ParcelLayer_June2026_3 (Allegan County)</td><td><code>gis.allegancounty.org</code></td><td>1</td></tr>
+<tr><td>MI</td><td>Parcels - MI - Eaton County (Eaton County)</td><td><code>services2.arcgis.com</code></td><td>1</td></tr>
+<tr><td>MI</td><td>Parcels - MI - Kent County (Kent County)</td><td><code>gis.kentcountymi.gov</code></td><td>1</td></tr>
+<tr><td>MI</td><td>Parcels - MI - Leelanau County (Leelanau County)</td><td><code>services.arcgis.com</code></td><td>1</td></tr>
+<tr><td>MI</td><td>Parcels - MI - Macomb County (Macomb County)</td><td><code>gis.macombgov.org</code></td><td>1</td></tr>
+<tr><td>MI</td><td>Tuscola County Parcels Current Year (Tuscola County)</td><td><code>services6.arcgis.com</code></td><td>1</td></tr>
+<tr><td>MN</td><td>Minnesota Parcels (opt-in open-data counties)</td><td><code>enterprise.gisdata.mn.gov</code></td><td>120</td></tr>
+<tr><td>MN</td><td>Parcels - MN - Faribault County (Faribault County)</td><td><code>services2.arcgis.com</code></td><td>1</td></tr>
+<tr><td>MO</td><td>Howell County Parcels (Howell County)</td><td><code>services5.arcgis.com</code></td><td>1</td></tr>
+<tr><td>MO</td><td>Johnson County Parcels_FILTERED (Johnson County)</td><td><code>gis.warrensburg-mo.com</code></td><td>1</td></tr>
+<tr><td>MO</td><td>St. Louis County Parcels</td><td><code>maps.stlouisco.com</code></td><td>1</td></tr>
+<tr><td>MS</td><td>Parcels (Prentiss County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>MT</td><td>Montana Cadastral Framework parcels</td><td><code>services.arcgis.com</code></td><td>51</td></tr>
+<tr><td>NC</td><td>Guilford County Parcels (Guilford County)</td><td><code>gcgis.guilfordcountync.gov</code></td><td>1</td></tr>
+<tr><td>NC</td><td>NC OneMap Parcels (polygons)</td><td><code>services.nconemap.gov</code></td><td>97</td></tr>
+<tr><td>ND</td><td>CenCom_Parcels (Burleigh County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>ND</td><td>Tax Parcels (Cass County)</td><td><code>gisweb.casscountynd.gov</code></td><td>1</td></tr>
+<tr><td>NE</td><td>Lincoln/Lancaster County Assessor Tax Parcels</td><td><code>gis.lincoln.ne.gov</code></td><td>1</td></tr>
+<tr><td>NE</td><td>Parcels - NE - Adams County (Adams County)</td><td><code>gis.adamscounty.org</code></td><td>1</td></tr>
+<tr><td>NE</td><td>Parcels - NE - Sarpy County (Sarpy County)</td><td><code>geodata.sarpy.gov</code></td><td>1</td></tr>
+<tr><td>NH</td><td>NH GRANIT Parcel Mosaic</td><td><code>nhgeodata.unh.edu</code></td><td>10</td></tr>
+<tr><td>NJ</td><td>NJ Parcels Composite with MOD-IV</td><td><code>services2.arcgis.com</code></td><td>42</td></tr>
+<tr><td>NM</td><td>Bernalillo County parcels (City of Albuquerque copy)</td><td><code>services.arcgis.com</code></td><td>1</td></tr>
+<tr><td>NV</td><td>Washoe County Assessor Parcels (nightly open data)</td><td><code>services.arcgis.com</code></td><td>2</td></tr>
+<tr><td>NY</td><td>Dutchess County Address Point File (used today)</td><td><code>services5.arcgis.com</code></td><td>1</td></tr>
+<tr><td>NY</td><td>Dutchess County Structures (building footprints, used today)</td><td><code>services5.arcgis.com</code></td><td>1</td></tr>
+<tr><td>NY</td><td>NYC Citywide Annualized Calendar Sales (DOF)</td><td><code>data.cityofnewyork.us</code></td><td>5</td></tr>
+<tr><td>NY</td><td>NYS Tax Assessment Lookup (coordinate GP service, all counties)</td><td><code>gisservices.its.ny.gov</code></td><td>1</td></tr>
+<tr><td>NY</td><td>NYS Tax Parcels Public (38 counties)</td><td><code>nysgeohub.ny.gov</code></td><td>38</td></tr>
+<tr><td>NY</td><td>Parcels - NY - Essex County (Essex County)</td><td><code>essex-gis.co.essex.ny.us</code></td><td>1</td></tr>
+<tr><td>OH</td><td>2024 Reval Tax Parcels (Lorain County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>OH</td><td>Franklin County Auditor Parcel Boundaries</td><td><code>gis.franklincountyohio.gov</code></td><td>2</td></tr>
+<tr><td>OH</td><td>Ohio Statewide Parcels Public View (OGRIP)</td><td><code>services2.arcgis.com</code></td><td>83</td></tr>
+<tr><td>OH</td><td>Parcel (Muskingum County)</td><td><code>services5.arcgis.com</code></td><td>1</td></tr>
+<tr><td>OK</td><td>County_Parcels (McClain County)</td><td><code>services8.arcgis.com</code></td><td>1</td></tr>
+<tr><td>OK</td><td>Tax Parcels Public (Oklahoma County)</td><td><code>services8.arcgis.com</code></td><td>1</td></tr>
+<tr><td>OR</td><td>Coos County Parcels (Coos County)</td><td><code>services8.arcgis.com</code></td><td>1</td></tr>
+<tr><td>OR</td><td>Marion County Parcels (Marion County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>PA</td><td>Berks County Parcels (Berks County)</td><td><code>services3.arcgis.com</code></td><td>1</td></tr>
+<tr><td>PA</td><td>Crawford County PA Tax Parcels - Open Data (Crawford County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>PA</td><td>Northampton Parcels (Northampton County)</td><td><code>services2.arcgis.com</code></td><td>1</td></tr>
+<tr><td>PA</td><td>Parcel Boundaries (Dauphin County)</td><td><code>services2.arcgis.com</code></td><td>1</td></tr>
+<tr><td>PA</td><td>Parcel Owners (Adams County)</td><td><code>mapping.adamscountypa.gov</code></td><td>1</td></tr>
+<tr><td>PA</td><td>Parcels (Chester County)</td><td><code>services.arcgis.com</code></td><td>1</td></tr>
+<tr><td>PA</td><td>Parcels (Lancaster County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>PA</td><td>Philadelphia OPA Properties (Carto SQL)</td><td><code>phl.carto.com</code></td><td>2</td></tr>
+<tr><td>SC</td><td>PARCELS (Darlington County)</td><td><code>services5.arcgis.com</code></td><td>1</td></tr>
+<tr><td>TN</td><td>Nashville Parcels</td><td><code>services2.arcgis.com</code></td><td>2</td></tr>
+<tr><td>TX</td><td>Andrews Parcels (Andrews County)</td><td><code>services8.arcgis.com</code></td><td>1</td></tr>
+<tr><td>TX</td><td>Bexar CAD Parcels</td><td><code>maps.bcad.org</code></td><td>1</td></tr>
+<tr><td>TX</td><td>HCAD Parcels (Harris County)</td><td><code>www.gis.hctx.net</code></td><td>1</td></tr>
+<tr><td>TX</td><td>LCAD_Parcels (Lamar County)</td><td><code>services2.arcgis.com</code></td><td>1</td></tr>
+<tr><td>TX</td><td>MCAD Tax Parcel View (Montgomery County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>TX</td><td>Parcel (Hays County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>TX</td><td>ParcelARI (Bastrop County)</td><td><code>services3.arcgis.com</code></td><td>1</td></tr>
+<tr><td>TX</td><td>Parcels (Collin County, TX) (Collin County)</td><td><code>services2.arcgis.com</code></td><td>1</td></tr>
+<tr><td>TX</td><td>Parcels (Hood County)</td><td><code>services5.arcgis.com</code></td><td>1</td></tr>
+<tr><td>TX</td><td>Parcels - TX - Brazoria County (Brazoria County)</td><td><code>arcgis-web.brazoriacountytx.gov</code></td><td>1</td></tr>
+<tr><td>TX</td><td>Parcels - TX - Tarrant County (Tarrant County)</td><td><code>mapit.tarrantcounty.com</code></td><td>1</td></tr>
+<tr><td>TX</td><td>Parcels - Williamson County (Williamson County)</td><td><code>gis.georgetowntexas.gov</code></td><td>1</td></tr>
+<tr><td>TX</td><td>Tax Parcels (Smith County)</td><td><code>gis.cityoftyler.net</code></td><td>1</td></tr>
+<tr><td>TX</td><td>Travis County TCAD public parcels</td><td><code>gis.traviscountytx.gov</code></td><td>1</td></tr>
+<tr><td>UT</td><td>Utah Salt Lake County Parcels LIR</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>UT</td><td>Utah Statewide Parcels (UGRC)</td><td><code>services1.arcgis.com</code></td><td>28</td></tr>
+<tr><td>VA</td><td>Bedford County Parcels - Open Data (Bedford County)</td><td><code>webgis.bedfordcountyva.gov</code></td><td>1</td></tr>
+<tr><td>VA</td><td>County Parcels_WFL1 (Spotsylvania County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>VA</td><td>James City County, VA - Parcels (James City County)</td><td><code>property.jamescitycountyva.gov</code></td><td>1</td></tr>
+<tr><td>VA</td><td>Parcels (King George County)</td><td><code>services2.arcgis.com</code></td><td>1</td></tr>
+<tr><td>VA</td><td>Parcels (Stafford County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>VA</td><td>Parcels - Middlesex Co. (Middlesex County)</td><td><code>services9.arcgis.com</code></td><td>1</td></tr>
+<tr><td>VA</td><td>Parcels Open Data (Roanoke County)</td><td><code>services1.arcgis.com</code></td><td>1</td></tr>
+<tr><td>VA</td><td>Tax_Parcels_DL (Fauquier County)</td><td><code>services.arcgis.com</code></td><td>1</td></tr>
+<tr><td>VT</td><td>VCGI Standardized Parcels with Grand List</td><td><code>services1.arcgis.com</code></td><td>14</td></tr>
+<tr><td>WA</td><td>King County Assessor Real Property Sales (bulk)</td><td><code>aqua.kingcounty.gov</code></td><td>1</td></tr>
+<tr><td>WA</td><td>King County Parcels with Address, Property and Ownership (Public)</td><td><code>services.arcgis.com</code></td><td>1</td></tr>
+<tr><td>WA</td><td>Washington Current Parcels</td><td><code>services.arcgis.com</code></td><td>38</td></tr>
+<tr><td>WI</td><td>CDSTRL_Parcel_AGOL (Fond du Lac County)</td><td><code>services5.arcgis.com</code></td><td>1</td></tr>
+<tr><td>WI</td><td>Owners (Dane County)</td><td><code>dcimapapps.danecounty.gov</code></td><td>1</td></tr>
+<tr><td>WI</td><td>ParcelPolygons_BrownCounty (Brown County)</td><td><code>gis.browncountywi.gov</code></td><td>1</td></tr>
+<tr><td>WI</td><td>Parcels (Wood County)</td><td><code>services2.arcgis.com</code></td><td>1</td></tr>
+<tr><td>WI</td><td>Parcels County (Ozaukee County)</td><td><code>gis2.co.ozaukee.wi.us</code></td><td>1</td></tr>
+<tr><td>WI</td><td>St Croix County Parcels (St. Croix County)</td><td><code>services5.arcgis.com</code></td><td>1</td></tr>
+<tr><td>WI</td><td>Tax Parcels View (Green County)</td><td><code>services5.arcgis.com</code></td><td>1</td></tr>
+<tr><td>WI</td><td>Village Parcels (Sauk County)</td><td><code>gis.co.sauk.wi.us</code></td><td>1</td></tr>
+<tr><td>WV</td><td>WV Statewide Parcels</td><td><code>services.wvgis.wvu.edu</code></td><td>55</td></tr>
+<tr><td>WY</td><td>Laramie County Assessor Parcels</td><td><code>maps.laramiecounty.com</code></td><td>1</td></tr>
+<tr><td>WY</td><td>Wyoming Parcels for 2026</td><td><code>services3.arcgis.com</code></td><td>22</td></tr>
+</tbody></table>
+<p>Market trends: FHFA House Price Index. County and ZIP boundaries: U.S. Census Bureau. All public domain or
+published by the agencies above for public use.</p>
+<footer>HouseLens · <a href="mailto:houselens.app@gmail.com">houselens.app@gmail.com</a></footer>
+</main>
+</body>
+</html>

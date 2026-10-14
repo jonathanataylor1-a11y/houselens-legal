@@ -28,14 +28,16 @@ code { background: var(--code); padding: 0.1em 0.35em; border-radius: 4px; font-
 .banner p { margin: 0; }
 nav { font-size: 0.95em; color: var(--muted); margin-bottom: 8px; }
 footer { margin-top: 3em; font-size: 0.9em; color: var(--muted); }
+table { border-collapse: collapse; width: 100%; font-size: 0.85em; display: block; overflow-x: auto; }
+th, td { text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
 </style>
 </head>
 <body>
 <main>
-<nav><a href="index.html">HouseLens legal</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></nav>
+<nav><a href="index.html">HouseLens legal</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="support.html">Support</a></nav>
 <h1 id="houselens-privacy-policy">HouseLens Privacy Policy</h1>
 <div class="banner" role="note"><p><strong>Draft — not yet reviewed by a lawyer.</strong> This document has not been reviewed by an attorney and may not be legally sufficient. Items marked [OWNER TO CONFIRM] must be completed before it is relied on.</p></div>
-<p><strong>Last updated:</strong> October 13, 2026 (draft). <strong>Effective date:</strong> [OWNER TO CONFIRM]</p>
+<p><strong>Last updated:</strong> October 14, 2026 (draft). <strong>Effective date:</strong> [OWNER TO CONFIRM]</p>
 <p>This policy explains what information the HouseLens iOS app ("HouseLens", "we", "us") handles, where it goes, and the choices you have. HouseLens is operated by [OWNER TO CONFIRM: legal name of the operating person or company, e.g. "Jonathan Taylor" or "HouseLens LLC"], [OWNER TO CONFIRM: mailing address]. Questions: <strong>houselens.app@gmail.com</strong>.</p>
 <h2 id="summary">Summary</h2>
 <ul>
@@ -62,7 +64,9 @@ footer { margin-top: 3em; font-size: 0.9em; color: var(--muted); }
 <p>If no camera frame is available (for example, the camera is off), the thumbnail may be a satellite map image of the property's location from Apple Maps (Section 3.3).</p>
 <h2 id="3-information-that-leaves-your-device">3. Information that leaves your device</h2>
 <h3 id="3-1-public-property-record-services">3.1 Public property-record services</h3>
-<p>To find the buildings and addresses around you, the app downloads public geographic data from <strong>Dutchess County's public GIS service</strong> (hosted on Esri's ArcGIS Online, <code>services5.arcgis.com</code>). Each request contains the boundaries of a small map area (cells about 250 meters across) around your current position. It does not contain your exact GPS reading, but it does show the general area you are in.</p>
+<p>[DRAFT CHANGE, October 14, 2026: nationwide coverage.] First, the app works out which county you are in <strong>on your device</strong>, from U.S. Census Bureau county boundaries built into the app. No request is made for this.</p>
+<p>To find the buildings and addresses around you, the app then downloads public property data directly from <strong>the public GIS service of that county or state</strong> (for example Dutchess County's service on Esri's ArcGIS Online, the New York State parcel service, or the statewide parcel services of states such as Connecticut, Florida or Maryland). The services HouseLens uses are listed at <a href="https://jonathanataylor1-a11y.github.io/houselens-legal/sources.html">houselens-legal/sources.html</a>. Each request contains the boundaries of a small map area (cells about 250 meters across) around your current position. It does not contain your exact GPS reading or any HouseLens identifier, but it does show the general area you are in. Where a layer has no ZIP code, the app looks it up on your device from Census ZIP areas built into the app.</p>
+<p>In some counties, recorded home sales are published only as bulk files. For those counties the app downloads a sales file for the whole county from HouseLens's file storage (Supabase Storage). The request names the county, never your position, and is the same for everyone in that county.</p>
 <p>To read assessment facts for the identified home and nearby comparable homes, the app sends <strong>those properties' coordinates</strong> to the <strong>New York State Tax Assessment Lookup service</strong> (<code>gisservices.its.ny.gov</code>).</p>
 <p>Like any internet request, these services also receive your device's IP address and standard technical information. Their own policies govern what they log.</p>
 <h3 id="3-2-zillow">3.2 Zillow</h3>
@@ -120,6 +124,7 @@ footer { margin-top: 3em; font-size: 0.9em; color: var(--muted); }
 <li><strong>Subscription records from Apple:</strong> a random account token that links your purchase to your profile, Apple's transaction ID, product, environment (production or test), status, renewal and expiry dates, and Apple's signed purchase data. <strong>Apple processes your payment; HouseLens never receives your card or billing details.</strong> Apple's notifications about renewals, refunds and cancellations are recorded.</li>
 <li><strong>Campaign data and statistics:</strong> your ad area (pin and radius, or target ZIPs), your plan (Standard, Plus or Premier) and the rotation weight it sets, whether your card is on or paused, and the aggregate counts described in Sections 3.5 and 3.6.</li>
 <li><strong>Sign-in session.</strong> Your sign-in session is stored in the iOS Keychain on your device.</li>
+<li><strong>Advertising waitlist (optional).</strong> [DRAFT CHANGE, October 14, 2026.] If HouseLens doesn't offer advertising in your area yet, you can tap <strong>Notify me when it's available</strong>. We then store your sign-in email address and the ZIP code and/or county you asked about, linked to your account so it is deleted when you delete your account. We use it only to email you when HouseLens covers that area. Nothing about consumers is stored with it.</li>
 </ul>
 <p>While your profile is published and your subscription is active, your display name, brokerage, headshot, public phone, public email, bio and website are shown to consumers looking at homes in your ad area.</p>
 <p>The "estimated monthly home-shopping audience" shown to agents comes from public U.S. Census Bureau data (American Community Survey). It contains no personal information about anyone. The estimated monthly views shown for each plan are calculated from the aggregate per-ZIP property-identification counts in Section 3.6, the share of each ZIP's land inside your area, and the other sponsored agents whose areas overlap yours; they contain no information about any consumer. The number of homes in your area comes from public U.S. Census Bureau data.</p>
@@ -133,7 +138,7 @@ footer { margin-top: 3em; font-size: 0.9em; color: var(--muted); }
 <li><strong>Apple</strong> processes App Store payments and sends subscription notifications. Apple also provides DeviceCheck and Apple Maps.</li>
 <li><strong>Zillow</strong> is an independent third-party website, not our service provider (Sections 3.2 and 5).</li>
 <li><strong>eXp Realty</strong> runs the public agent search the app opens for eXp agents during sign-up (Section 5). It is an independent third-party website, not our service provider.</li>
-<li><strong>Dutchess County (via Esri ArcGIS Online) and New York State GIS services</strong> provide public data (Section 3.1).</li>
+<li><strong>County and state public GIS services</strong> (many hosted on Esri's ArcGIS Online), listed at <a href="https://jonathanataylor1-a11y.github.io/houselens-legal/sources.html">houselens-legal/sources.html</a>, provide public property data (Section 3.1). [DRAFT CHANGE, October 14, 2026.]</li>
 <li><strong>Real estate agents</strong> receive whatever you choose to send them (Section 4).</li>
 </ul>
 <p>We may also disclose information when required by law or legal process, to protect rights, safety and security, or as part of a merger, acquisition or sale of assets, in which case this policy continues to apply.</p>
@@ -141,7 +146,8 @@ footer { margin-top: 3em; font-size: 0.9em; color: var(--muted); }
 <h2 id="8-how-long-we-keep-information">8. How long we keep information</h2>
 <ul>
 <li><strong>On your device:</strong> until you delete it or delete the app. Recent Scans keeps at most 15 homes.</li>
-<li><strong>Agent accounts:</strong> until you delete the account. Deleting it removes your sign-in account, profile, campaign, sponsored-card statistics, and draft and published headshots.</li>
+<li><strong>Agent accounts:</strong> until you delete the account. Deleting it removes your sign-in account, profile, campaign, sponsored-card statistics, advertising-waitlist entries, and draft and published headshots.</li>
+<li><strong>Advertising waitlist:</strong> until you delete your account, or until we have told you your area is available. [OWNER TO CONFIRM.] [DRAFT CHANGE, October 14, 2026.]</li>
 <li><strong>Headshots:</strong> unpublished draft uploads are deleted after 24 hours. Replaced or orphaned public images are deleted after about an hour.</li>
 <li><strong>Activity counter:</strong> abuse-prevention hashes are kept for about 1 day, one-time IDs for about 3 days, and per-ZIP daily totals indefinitely (they contain no personal information).</li>
 <li><strong>Apple notification records</strong> (Apple transaction ID, notification type and dates) are not currently deleted with an agent account. [OWNER TO CONFIRM: retention period, e.g. as needed for tax and accounting records.]</li>
